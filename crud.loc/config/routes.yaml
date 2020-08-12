@@ -1,0 +1,25 @@
+
+projects:
+  path: /projects
+  controller: App\Controller\ProjectController::getList
+  methods: GET
+
+projectById:
+  path: /projects/{id}
+  controller: App\Controller\ProjectController::getListById
+  methods: GET
+
+addProject:
+  path: /projects
+  controller: App\Controller\ProjectController::addProject
+  methods: POST
+
+updProject:
+  path: /projects/{id}
+  controller: App\Controller\ProjectController::updProject
+  methods: PATCH
+
+delProject:
+  path: /projects/{id}
+  controller: App\Controller\ProjectController::delProject
+  methods: DELETE
